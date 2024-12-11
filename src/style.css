@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    list-style-type: none;
+    text-decoration: none;
+    padding:0;
+    margin:0;
+    color:black;
+    font-family: "Inter", sans-serif;
+}
+
+html,body{
+height:100%;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between; 
+}
+.navbar li ul{
+    display:flex;
+
+}
+.navbar li{
+
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+.logo{
+    font-weight: bold;
+    font-size : 2rem;
+}
+.manOrWoman{
+    display:flex;
+    min-height: 100%;
+}
+.image{
+    width : 50vw;
+    height:100%;
+    background-image: url("../imgs/placeholderman.png");
+    z-index: -1;
+    /*background-repeat: no-repeat;*/
+}
+.bodyText{
+    height:100%;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 2.5rem;
+}
+.cardsCollection{
+    display:grid;
+    grid-template-columns: repeat(4, 0fr);
+    grid-auto-rows: auto;
+    margin:auto;
+    justify-content: center;
+}
+.card{
+    width:300px;
+    height:400px;
+    
+    position: relative;
+    margin:0;
+
+}
+.cardContent
+{
+    position:absolute;
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.cardContent p{
+    color:white;
+}
+.cardImage{
+    width : auto;
+    height:70%;
+    background-image: url("../imgs/placeholderman.png");
+    z-index:-1;
+}
+.cartObjects{
+    width:100%;
+    margin-top :50px;
+    
+}
+.cartObject{
+    margin: 50px auto;
+    width:90%;
+    height:250px;
+    
+    background-color: #d9d9d9;
+    display:flex;
+    align-items: center;
+
+}
+.cartObjectImage{
+    width:200px ;
+    height:200px;
+    background-color: yellow;
+    margin:20px;
+}
+.cartObjectContent{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:70%;
+}
+.totalPrice
+{
+    width : 200px;
+    height: 150px;
+    background-color:#d9d9d9;
+    
+    display:flex;
+    align-items: center;    
+    justify-content: center;
+    margin:100px auto ;
+    
+}
+.buy button{
+    width:100px;
+    height:80px;
+    background-color:#d9d9d9;
+    border:none;
+    font-weight: bold;
+}
+.buy{
+
+    display:flex;
+    justify-content: center;
+    padding-bottom:100px;
+
+}
+
+
